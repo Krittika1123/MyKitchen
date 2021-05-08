@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krittika's Kitchen</title>
+    <style>
+    body{
+        font-size: 25px;
+        background-color: pink;
+        color: blue;
+    }
+    div{
+        height: 500px;
+        width: 500px;
+        text-align: center;
+    }
+    #box{
+        display: flex;
+        flex-direction: row;
+        height: 500px;
+        width: 100%;
+    }
+    #container{
+        display: flex;
+        flex-direction: row;
+        height: 500px;
+        width: 100%;
+    }
+    
+    #div1{
+        background-color: pink;
+        height: 500px;
+        width: 500px;
+        animation-name: demo;
+        position: relative;
+        animation-duration: 10s;
+        animation-delay: 5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    @keyframes demo{
+        10%{background-image: url("Butter Chicken.jpg");}
+        20%{background-image: url("Red Dal.jpg");}
+        30%{background-image: url("Mango\ Milkshake.jpg");}
+        40%{background-image: url("Masala\ Pasta.jpg");}
+        50%{background-image: url("Gulab\ Jamun.jpg");}
+        60%{background-image: url("Sambar.jpg");}
+        70%{background-image: url("Paneer\ Butter.jpg");}
+        80%{background-image: url("Egg\ Curry.jpg");}
+        90%{background-image: url("Khichidi.jpg");}
+        100%{background-image: url("Veg\ Biryani.jpg");}
+    }
+    </style>
+</head>
+<body>
+    <br/>
+    <br/>
+    <center>
+    <div id="div1"></div>
+    </center>
+    </div>
+    <marquee direction="sideways"><h1> Krittika's Kitchen </h1></marquee>
+    <section id="box">
+        <div>
+            <img height="300" width="300" src="Butter Chicken.jpg" usemap="#Chicken" >
+            <map name="Chicken">
+                <area shape="circle" coords="250,290,250" href="Butter Chicken.html">
+            </map>
+            <p> Butter Chicken (Curry) </p>
+        </div>
+        <div>
+            <img height="300" width="300" src="Red Dal.jpg" usemap="#Dal">
+            <map name="Dal">
+                <area shape="circle" coords="250,280,215" href="Dal.html" >
+            </map>
+            <p>Red Dal (Curry)</p>
+        </div>
+        <div>
+            <img height="300" width="300" src="Mango Milkshake.jpg" usemap="#Mango">
+            <map name="Mango">
+                <area shape="circle" coords="240,210,160" href="Mango.html" >
+            </map>
+            <p> Mango Milkshake (Drink) </p>
+        </div>
+        <div>
+            <img height="300" width="300" src="Masala Pasta.jpg" usemap="#Pasta">
+            <map name="Pasta">
+                <area shape="circle" coords="280,210,210" href="Pasta.html" >
+            </map>
+            <p> Masala Pasta (Dish) </p>
+        </div>
+        <div>
+            <img height="300" width="300" src="Gulab Jamun.jpg" usemap="#Sweet">
+            <map name="Sweet">
+                <area shape="circle" coords="220,210,125" href="Gulab.html" >
+            </map>
+            <p> Gulab Jamun (Sweet Dish) </p>
+        </div>
+    </section>
+    <section id="container">
+        <div>
+            <img height="300" width="300" src="Sambar.jpg" usemap="#Sambar">
+            <map name="Sambar">
+                <area shape="circle" coords="260,325,230" href="Sambar.html" >
+            </map>
+            <p> Sambar (Dish) </p>
+        </div>
+        <div>
+            <img height="300" width="300" src="Paneer Butter.jpg" usemap="#Paneer">
+            <map name="Paneer">
+                <area shape="circle" coords="210,220,145" href="Paneer.html" >
+            </map>
+            <p> Paneer Butter (Dish) </p>
+        </div>
+        <div>
+            <img height="300" width="300" src="Egg Curry.jpg" usemap="#Egg">
+            <map name="Egg">
+                <area shape="circle" coords="270,265,285" href="Egg.html" >
+            </map>
+            <p> Egg curry (Curry) </p>
+        </div>
+        <div>
+            <img height="300" width="300" src="Khichidi.jpg" usemap="#Khichidi">
+            <map name="Khichidi">
+                <area shape="circle" coords="223,220,245" href="Khichidi.html" >
+            </map>
+            <p> Khichidi (Dish) </p>
+        </div>
+        <div>
+            <img height="300" width="300" src="Veg Biryani.jpg" usemap="#Biryani">
+            <map name="Biryani">
+                <area shape="circle" coords="245,350,285" href="Biryani.html" >
+            </map>
+            <p> Vegetarian Biryani (Dish) </p>
+        </div>
+    </section>
+</body>
+</html>
